@@ -1,3 +1,35 @@
+## beluga (humble) - 2.0.2-1
+
+The packages in the `beluga` repository were released into the `humble` distro by running `/home/z572/gits/revyos-ros/venv/bin/bloom-release -r humble beluga --override-release-repository-push-url git@github.com:revyos-ros/beluga-release.git` on `Mon, 23 Sep 2024 05:15:10 -0000`
+
+These packages were released:
+- `beluga`
+- `beluga_amcl`
+- `beluga_ros`
+
+These packages were explicitly ignored:
+- `beluga_benchmark`
+- `beluga_example`
+- `beluga_system_tests`
+- `beluga_tutorial`
+
+Version of package(s) in repository `beluga`:
+
+- upstream repository: https://github.com/Ekumen-OS/beluga.git
+- release repository: https://github.com/revyos-ros/beluga-release.git
+- rosdistro version: `2.0.2-1`
+- old version: `2.0.1-1`
+- new version: `2.0.2-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## beluga (jazzy) - 2.0.1-1
 
 The packages in the `beluga` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --ros-distro jazzy beluga` on `Fri, 24 May 2024 21:55:15 -0000`
