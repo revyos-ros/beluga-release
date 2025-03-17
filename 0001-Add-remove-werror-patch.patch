@@ -1,0 +1,52 @@
+From 6820849a8b145740c94997f9ec1d9228d124b7f4 Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <z572@z572.online>
+Date: Mon, 17 Mar 2025 17:08:51 +0800
+Subject: [PATCH] Add remove werror patch.
+
+---
+ debian/patches/0001-remove-werror.patch | 24 ++++++++++++++++++++++++
+ debian/patches/series                   |  1 +
+ 2 files changed, 25 insertions(+)
+ create mode 100644 debian/patches/0001-remove-werror.patch
+ create mode 100644 debian/patches/series
+
+diff --git a/debian/patches/0001-remove-werror.patch b/debian/patches/0001-remove-werror.patch
+new file mode 100644
+index 0000000..9cf0cd2
+--- /dev/null
++++ b/debian/patches/0001-remove-werror.patch
+@@ -0,0 +1,24 @@
++From 03004fceff4fa0bb4366041e52f64c4c05856ad9 Mon Sep 17 00:00:00 2001
++From: Zheng Junjie <z572@z572.online>
++Date: Mon, 17 Mar 2025 17:07:28 +0800
++Subject: [PATCH] remove werror
++
++---
++ CMakeLists.txt | 1 -
++ 1 file changed, 1 deletion(-)
++
++diff --git a/CMakeLists.txt b/CMakeLists.txt
++index f3e49f7..9c83670 100644
++--- a/CMakeLists.txt
+++++ b/CMakeLists.txt
++@@ -31,7 +31,6 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
++     beluga_compile_options
++     INTERFACE -Wall
++               -Wconversion
++-              -Werror
++               -Wextra
++               -Wpedantic)
++ endif()
++-- 
++2.47.1
++
+diff --git a/debian/patches/series b/debian/patches/series
+new file mode 100644
+index 0000000..da8ab9a
+--- /dev/null
++++ b/debian/patches/series
+@@ -0,0 +1 @@
++0001-remove-werror.patch
+-- 
+2.48.1
+
