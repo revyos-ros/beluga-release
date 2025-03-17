@@ -1,0 +1,24 @@
+From b4bd479ca2b2617c9193a82a6c00b57d132ac2b3 Mon Sep 17 00:00:00 2001
+From: Zheng Junjie <z572@z572.online>
+Date: Mon, 17 Mar 2025 17:11:49 +0800
+Subject: [PATCH] remove werror
+
+---
+ CMakeLists.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 579cfa4..ed5c22d 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -30,7 +30,6 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+     -Wall
+     -Wconversion
+     -Wextra
+-    -Werror
+     -Wpedantic)
+ endif()
+ 
+-- 
+2.47.1
+
